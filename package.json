@@ -4,7 +4,7 @@
   "description": "Beautiful terminal portfolio",
   "main": "index.js",
   "bin": {
-    "portfolio": "./index.js"
+    "shwet46": "./index.js"
   },
   "scripts": {
     "start": "node index.js",

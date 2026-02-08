@@ -13,7 +13,14 @@
     "codechef": "1700+ (3-Star)",
     "codeforces": "1400+ (Specialist)"
   },
-  "skills": ["Next.js", "React", "Flutter", "Flask", "Node.js", "Express", "MongoDB", "Firebase", "PostgreSQL", "Python", "JavaScript", "TypeScript", "C++", "Java", "Git", "Docker", "Langchain", "RAG", "VertexAI", "Postman"],
+  "skills": {
+    "frontend": ["React", "Next.js", "Flutter"],
+    "backend": ["Node.js", "Express", "Flask"],
+    "database": ["MongoDB", "PostgreSQL", "Firebase"],
+    "languages": ["Python", "JavaScript", "TypeScript", "Java", "C++"],
+    "tools": ["Docker", "Git", "Postman"],
+    "ai": ["Langchain", "RAG", "VertexAI"]
+  },
   "projects": [
     {
       "name": "AlgoGrit DSA",

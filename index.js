@@ -41,31 +41,7 @@ const icons = {
 };
 
 
-const palette = {
-  orangeDeep: "#FF7A18",
-  orangeMid: "#FFA94D",
-  orangeLight: "#FFB347",
-  cyan: "#00D9FF",
-  purple: "#A855F7",
-  green: "#10B981",
-  blue: "#60A5FA",
-  pink: "#F472B6",
-  amber: "#F59E0B",
-  slate: "#94A3B8"
-};
-
-
-
-const styles = {
-  title: (s) => chalk.bold.hex(palette.orangeDeep)(s),
-  highlight: (s) => chalk.bold.hex(palette.orangeMid)(s),
-  name: (s) => chalk.bold.hex(palette.purple)(s),
-  muted: chalk.hex(palette.slate),
-  link: (s) => chalk.hex(palette.cyan).underline(s),
-  ok: (s) => chalk.hex(palette.green)(s),
-  badge: (t, c = palette.orangeLight) =>
-    chalk.bgHex(c).black.bold(` ${t} `)
-};
+const { palette, styles } = require("./ui.js");
 
 
 const visualLen = (s) => stripAnsi(s).length;
@@ -183,25 +159,19 @@ const contact = () => {
 
 
 const skillColor = (skill) => {
-  const frontend = ["React", "Next.js", "Flutter"];
-  const backend = ["Node.js", "Express", "Flask"];
-  const database = ["MongoDB", "PostgreSQL", "Firebase"];
-  const languages = ["Python", "JavaScript", "TypeScript", "Java", "C++"];
-  const tools = ["Docker", "Git", "Postman"];
-  const ai = ["Langchain", "RAG", "VertexAI"];
-
-  if (frontend.includes(skill)) return palette.pink;
-  if (backend.includes(skill)) return palette.green;
-  if (database.includes(skill)) return palette.orangeMid;
-  if (languages.includes(skill)) return palette.blue;
-  if (tools.includes(skill)) return palette.amber;
-  if (ai.includes(skill)) return palette.purple;
+  if (data.skills.frontend.includes(skill)) return palette.pink;
+  if (data.skills.backend.includes(skill)) return palette.green;
+  if (data.skills.database.includes(skill)) return palette.orangeMid;
+  if (data.skills.languages.includes(skill)) return palette.blue;
+  if (data.skills.tools.includes(skill)) return palette.amber;
+  if (data.skills.ai.includes(skill)) return palette.purple;
 
   return palette.orangeLight;
 };
 
 const techStack = (config) => {
-  const badges = data.skills.map((s) =>
+  const allSkills = Object.values(data.skills).flat();
+  const badges = allSkills.map((s) =>
     styles.badge(s, skillColor(s))
   );
 
