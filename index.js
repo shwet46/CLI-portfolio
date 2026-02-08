@@ -195,7 +195,7 @@ const techStack = (config) => {
 const projects = (config) => {
   return data.projects
     .map((p) => {
-      const head = `${icons.rocket} ${styles.highlight(p.name)}`;
+      const head = `> ${styles.highlight(p.name)}`;
       const desc = wrap(styles.muted(p.desc), config.contentWidth - 2)
         .split("\n")
         .map((l) => `  ${l}`)
@@ -208,7 +208,7 @@ const projects = (config) => {
 
 const achievements = () => {
   return data.achievements
-    .map((a) => `${icons.trophy} ${styles.ok(a)}`)
+    .map((a) => `> ${styles.ok(a)}`)
     .join("\n");
 };
 
