@@ -74,7 +74,7 @@ your-command-name
 
 ---
 
-## 5. Publish to NPM (Optional but Recommended)
+## 5. Publish to NPM (if you want to)
 
 If you want others to run your CLI portfolio globally:
 
@@ -97,6 +97,8 @@ npx your-command-name
 ```
 
 ---
+
+#### hope so you liked this and created your own portfolio :)
 
 ## License
 
