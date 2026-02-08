@@ -10,7 +10,7 @@
 
 ---
 
-# 📦 Create Your Own Terminal Portfolio
+# Create Your Own Terminal Portfolio
 
 Follow these steps to customize and deploy your own CLI portfolio.
 
@@ -23,6 +23,8 @@ You can either fork this repository or clone it locally.
 ```bash
 git clone https://github.com/shwet46/CLI-portfolio.git
 cd CLI-portfolio
+
+npm i
 ```
 
 ---
@@ -33,7 +35,7 @@ Update the `data.json` file with your personal information.
 
 This file controls most of the displayed content.
 
-modify index.js file accordingly based on the data.
+modify `index.js` file accordingly based on the data.
 
 ---
 ## 3. Change CLI Command Name
