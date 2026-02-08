@@ -1,0 +1,42 @@
+{
+  "name": "SHWET46",
+  "full_name": "Shweta Behera",
+  "tagline": "Software Developer | Competitive Programmer | AI & App Developer",
+  "location": "Mumbai, India",
+  "contact": {
+    "email": "shwetabehera444@gmail.com",
+    "github": "https://github.com/shwet46",
+    "linkedin": "https://linkedin.com/in/shweta-behera",
+    "portfolio": "https://shwet46.me"
+  },
+  "competitive-programming": {
+    "codechef": "1700+ (3-Star)",
+    "codeforces": "1400+ (Specialist)"
+  },
+  "skills": ["Next.js", "React", "Flutter", "Flask", "Node.js", "Express", "MongoDB", "Firebase", "PostgreSQL", "Python", "JavaScript", "TypeScript", "C++", "Java", "Git", "Docker", "Langchain", "RAG", "VertexAI", "Postman"],
+  "projects": [
+    {
+      "name": "AlgoGrit DSA",
+      "desc": "AlgoGrit is built for personal DSA practice, featuring curated problems from multiple platforms along with tools for tracking, notes and code execution."
+    },
+    {
+      "name": "VoiceCare",
+      "desc": "Voice-first emergency app for elderly users detecting distress through speech cues."
+    },
+     {
+      "name": "GoHire",
+      "desc": "Fullstack hiring platform made for students and startups."
+    },
+     {
+      "name": "Krishivya",
+      "desc": "AI-powered Multilinngual agriculture assistant providing real-time insights and personalized advice to farmers, with a Multimodal Telegram bot for farmer queries."
+    }
+  ],
+  "achievements": [
+    "Winner: Google AdMob Hackathon (IIT Bombay)",
+    "Winner: Aarohan Hackathon (IIT Bombay)",
+    "Winner: MLH x Gemini Hackathon",
+    "Track Winner: BBB Hackathon (SPIT, Mumbai)",
+    "Top 25 out of 1700+ teams: GDG Build n Grow Hackathon"
+  ]
+}

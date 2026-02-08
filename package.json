@@ -1,0 +1,35 @@
+{
+  "name": "terminal-portfolio",
+  "version": "2.0.0",
+  "description": "Beautiful terminal portfolio",
+  "main": "index.js",
+  "bin": {
+    "portfolio": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "terminal",
+    "portfolio",
+    "cli",
+    "resume",
+    "competitive-programming"
+  ],
+  "author": "Shweta Behera",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "boxen": "^5.1.2",
+    "terminal-link": "^2.1.1",
+    "gradient-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
