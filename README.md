@@ -4,7 +4,7 @@
 
 ![Demo](https://raw.githubusercontent.com/shwet46/CLI-portfolio/main/demo.gif)
 
-<p>Run <b><i>npx shwet46</i></b> to see this on terminal :)</p>
+<p>Run <b><i>npx shwet46-portfolio</i></b> to see this on your terminal :)</p>
 
 </div>
 
@@ -23,36 +23,43 @@ You can either fork this repository or clone it locally.
 ```bash
 git clone https://github.com/shwet46/CLI-portfolio.git
 cd CLI-portfolio
-
-npm i
+npm install
 ```
 
 ---
 
 ## 2. Customize Your Portfolio Data
 
-Update the `data.json` file with your personal information.
+Update the `data.json` file with your personal information. This file controls most of the displayed content.
 
-This file controls most of the displayed content.
-
-modify `index.js` file accordingly based on the data.
+You can also modify `index.js` if you want to change the structure or style of the portfolio.
 
 ---
-## 3. Change CLI Command Name
+## 3. Change Package and Command Name
 
-Open `package.json` and update:
+Open `package.json` and update the `name` and `bin` fields:
 
 ```json
-"bin": {
-	"your-command-name": "./index.js"
+{
+  "name": "your-package-name",
+  "version": "1.0.0",
+  "bin": {
+    "your-command-name": "./index.js"
+  }
 }
 ```
 
-Example:
+-   `name`: This will be the name of your package on npm.
+-   `your-command-name`: This is the command users will run with `npx`, try to keep it same as package name.
+
+For example:
 
 ```json
-"bin": {
-	"shwet46": "./index.js"
+{
+  "name": "shwet46-portfolio",
+  "bin": {
+    "shwet46": "./index.js"
+  }
 }
 ```
 
@@ -60,13 +67,13 @@ Example:
 
 ## 4. Test Locally
 
-Run the following command inside your project:
+Run the following command inside your project to link your package locally:
 
 ```bash
 npm link
 ```
 
-Then test:
+Then you can test your command:
 
 ```bash
 your-command-name
@@ -74,9 +81,9 @@ your-command-name
 
 ---
 
-## 5. Publish to NPM (if you want to)
+## 5. Publish to NPM
 
-If you want others to run your CLI portfolio globally:
+If you want others to be able to run your portfolio with `npx`, you'll need to publish it to npm.
 
 ### Login to npm
 
@@ -90,15 +97,19 @@ npm login
 npm publish
 ```
 
-Users can then run:
+Once published, anyone can run your portfolio using:
 
+```bash
+npx your-package-name
+```
+or
 ```bash
 npx your-command-name
 ```
 
 ---
 
-#### hope so you liked this and created your own portfolio :)
+#### Hope you liked this and created your own portfolio :)
 
 ## License
 
