@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Demo](demo.gif)
+![Demo](https://raw.githubusercontent.com/shwet46/CLI-portfolio/main/demo.gif)
 
 <p>Run <b><i>npx shwet46</i></b> to see this on terminal :)</p>
 

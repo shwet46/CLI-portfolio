@@ -1,5 +1,5 @@
 {
-  "name": "terminal-portfolio",
+  "name": "shwet46-portfolio",
   "version": "2.0.0",
   "description": "Beautiful terminal portfolio",
   "main": "index.js",
@@ -14,8 +14,8 @@
     "terminal",
     "portfolio",
     "cli",
-    "resume",
-    "competitive-programming"
+    "nodejs",
+    "javascript"
   ],
   "author": "Shweta Behera",
   "license": "MIT",
