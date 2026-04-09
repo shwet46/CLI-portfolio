@@ -85,20 +85,22 @@ const getConfig = () => {
 
 
 
-const card = (title, content, config, icon = "") => {
-  const header = `${icon} ${styles.title(title)}`;
-  const body = `${dblThin(config.contentWidth)}\n${content}`;
-  const text = `${header}\n${body}`;
+const card = (title, content, config, icon = "", color = palette.mauve) => {
+  if (!boxen || config.isSmall) {
+    const header = `${icon} ${styles.title(title)}`;
+    const body = `${dblThin(config.contentWidth)}\n${content}`;
+    return `${header}\n${body}`;
+  }
 
-  if (!boxen || config.isSmall) return text;
-
-  return boxen(text, {
+  return boxen(content, {
+    title: `${icon} ${styles.title(title)}`,
+    titleAlignment: "center",
     padding: 1,
-    borderStyle: "double",
-    borderColor: "yellow"
+    margin: { top: 1, bottom: 1 },
+    borderStyle: "round",
+    borderColor: color
   });
 };
-
 
 const header = (config) => {
   if (config.isSmall) {
@@ -252,15 +254,15 @@ const render = () => {
   console.log(dblThin(config.contentWidth));
 
   const sections = [
-    card("CONNECT", contact(), config, icons.link),
-    card("TECH STACK", techStack(config), config, icons.code),
-    card("PROJECTS", projects(config), config, icons.rocket),
-    card("COMPETITIVE PROGRAMMING", competitiveProgramming(config), config, icons.chart),
-    card("ACHIEVEMENTS", achievements(), config, icons.trophy)
+    card("CONNECT", contact(), config, icons.link, "cyan"),
+    card("TECH STACK", techStack(config), config, icons.code, "green"),
+    card("PROJECTS", projects(config), config, icons.rocket, "yellow"),
+    card("COMPETITIVE PROGRAMMING", competitiveProgramming(config), config, icons.chart, "blue"),
+    card("ACHIEVEMENTS", achievements(), config, icons.trophy, "magenta")
   ];
 
-  console.log(sections.join("\n\n"));
-  console.log("\n" + catFooter(config) + "\n");
+  console.log(sections.join(""));
+  console.log(catFooter(config) + "\n");
 };
 
 

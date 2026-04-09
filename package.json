@@ -1,6 +1,6 @@
 {
   "name": "shwet46-portfolio",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "description": "Beautiful terminal portfolio",
   "main": "index.js",
   "bin": {
@@ -19,6 +19,17 @@
   ],
   "author": "Shweta Behera",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwet46/CLI-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shwet46/CLI-portfolio/issues"
+  },
+  "homepage": "https://github.com/shwet46/CLI-portfolio#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "figlet": "^1.7.0",

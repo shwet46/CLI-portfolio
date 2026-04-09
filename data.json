@@ -1,7 +1,7 @@
 {
   "name": "SHWET46",
   "full_name": "Shweta Behera",
-  "tagline": "Software Developer | Competitive Programmer | AI & App Developer",
+  "tagline": "Software Developer | Competitive Programmer | GenAI & App Developer",
   "location": "Mumbai, India",
   "contact": {
     "email": "shwetabehera444@gmail.com",
@@ -15,7 +15,7 @@
   },
   "skills": {
     "frontend": ["React", "Next.js", "Flutter"],
-    "backend": ["Node.js", "Express", "Flask"],
+    "backend": ["Node.js", "Express", "Flask", "FastAPI"],
     "database": ["MongoDB", "PostgreSQL", "Firebase"],
     "languages": ["Python", "JavaScript", "TypeScript", "Java", "C++"],
     "tools": ["Docker", "Git", "Postman"],
@@ -36,13 +36,13 @@
     },
      {
       "name": "Krishivya",
-      "desc": "AI-powered Multilinngual agriculture assistant providing real-time insights and personalized advice to farmers, with a Multimodal Telegram bot for farmer queries."
+      "desc": "AI-powered Multilinngual agriculture assistant providing real-time insights and personalized advice to farmers, a Multimodal Telegram bot for farmer queries."
     }
   ],
   "achievements": [
-    "Winner: Google AdMob Hackathon (IIT Bombay)",
-    "Winner: Aarohan Hackathon (IIT Bombay)",
     "Winner: MLH x Gemini Hackathon",
-    "Track Winner: BBB Hackathon (SPIT, Mumbai)"
+    "1st Runner up: Google AdMob Hackathon (IIT Bombay)",
+    "1st Runner up: Aarohan Hackathon (IIT Bombay)",
+    "SaaS Track Winner: BBB Hackathon (SPIT, Mumbai)"
   ]
 }
